@@ -1,0 +1,752 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #242424;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.upSide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid #ff7f50;
+}
+
+.upSide-container .upside-BG {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  height: 620px;
+}
+
+.upSide-container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  color: white;
+  width: 100;
+  font-size: 43px;
+}
+
+.upSide-container .content p {
+  margin-left: 133px;
+  font-size: 21px;
+  color: #2f3542;
+  margin-top: 20px;
+}
+
+@media (max-width: 1150px) {
+  .upSide-container .content {
+    width: 100%;
+  }
+  .upSide-container .content h1 {
+    font-size: 53px;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    margin-left: 380px;
+    color: #737373;
+  }
+  .upSide-container .content p {
+    margin-left: 412px;
+    font-size: 20px;
+    color: #2f3542;
+  }
+}
+
+@media (max-width: 700px) {
+  .upSide-container .content {
+    width: 100%;
+  }
+  .upSide-container .content h1 {
+    font-size: 53px;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    margin-left: 51px;
+    color: #737373;
+  }
+  .upSide-container .content p {
+    margin-left: 84px;
+    font-size: 20px;
+    color: #2f3542;
+  }
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  border: 5px solid #ff7f50;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  top: 30%;
+  left: 51%;
+  position: absolute;
+}
+
+.downSide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.downSide-container .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.downSide-container .about-container .header-container {
+  background-color: #ff7f50;
+}
+
+.downSide-container .about-container .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 100px;
+  border-radius: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .about-container .header-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.downSide-container .about-container .header-container:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  color: #2d3436;
+}
+
+.downSide-container .about-container .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  background-color: #2f354242;
+}
+
+.downSide-container .about-container .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ff7f5021;
+  width: 93%;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.downSide-container .about-container .contact .facebook {
+  width: 60px;
+  height: 60px;
+  margin: 0px 0px;
+  background-image: url("facecook.jpg");
+  background-size: 60px 60px;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .about-container .contact .facebook:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .about-container .contact .whatsapp {
+  width: 60px;
+  height: 60px;
+  margin: 0px 0px;
+  background-image: url("whatsapp.jpg");
+  background-size: 60px 60px;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .about-container .contact .whatsapp:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .about-container .contact .twitter {
+  width: 60px;
+  height: 60px;
+  margin: 0px 0px;
+  background-image: url("twitter.jpg");
+  background-size: 60px 60px;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .about-container .contact .twitter:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .about-container .contact .linkedin {
+  width: 60px;
+  height: 60px;
+  margin: 0px 0px;
+  background-image: url("linkedin.jpg");
+  background-size: 60px 60px;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .about-container .contact .linkedin:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .about-container .contact .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 59px;
+  width: 208px;
+  margin-top: 0;
+  margin-left: 10px;
+  border-radius: 50px;
+  background-color: #89c2ff0f;
+}
+
+.downSide-container .about-container .contact .link a {
+  margin: 16px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.downSide-container .activities-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.downSide-container .activities-container .header-container {
+  background-color: #ee5253;
+}
+
+.downSide-container .activities-container .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 100px;
+  border-radius: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .activities-container .header-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.downSide-container .activities-container .header-container:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  color: #2d3436;
+}
+
+.downSide-container .activities-container .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  background-color: #2f354242;
+}
+
+.downSide-container .activities-container .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 110px;
+  background-color: #ee52530f;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.downSide-container .activities-container .element p {
+  font-size: 26px;
+  padding: 13px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.downSide-container .education-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.downSide-container .education-container .header-container {
+  background-color: #3498db;
+}
+
+.downSide-container .education-container .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 100px;
+  border-radius: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .education-container .header-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.downSide-container .education-container .header-container:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  color: #2d3436;
+}
+
+.downSide-container .education-container .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  background-color: #2f354242;
+}
+
+.downSide-container .education-container .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 110px;
+  background-color: #3498db0f;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.downSide-container .education-container .element .elem-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  height: 25%;
+  font-size: 100%;
+  font-weight: bold;
+  background-color: #3498db3b;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.downSide-container .education-container .element p {
+  font-size: 25px;
+  color: white;
+  margin: 10px;
+}
+
+.downSide-container .techSkills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.downSide-container .techSkills-container .header-container {
+  background-color: #2ecc71;
+}
+
+.downSide-container .techSkills-container .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 100px;
+  border-radius: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .techSkills-container .header-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.downSide-container .techSkills-container .header-container:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  color: #2d3436;
+}
+
+.downSide-container .techSkills-container .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  background-color: #2f354242;
+}
+
+.downSide-container .techSkills-container .course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #2ecc7114;
+  width: 93%;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.downSide-container .techSkills-container .course .html {
+  width: 66px;
+  height: 66px;
+  margin: -3px -3px;
+  background-image: url("html.jpg");
+  background-size: 66px 66px;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .techSkills-container .course .html:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .techSkills-container .course .css {
+  width: 66px;
+  height: 66px;
+  margin: -3px -3px;
+  background-image: url("css.jpg");
+  background-size: cover;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .techSkills-container .course .css:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .techSkills-container .course .sass {
+  width: 60px;
+  height: 60px;
+  background-image: url("sass.jpg");
+  background-size: 100%;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .techSkills-container .course .sass:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .techSkills-container .course .js {
+  width: 75px;
+  height: 75px;
+  margin: -7px -8px;
+  background-image: url("js.jpg");
+  background-size: 100%;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .techSkills-container .course .js:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .techSkills-container .course .jq {
+  width: 60px;
+  height: 60px;
+  background-image: url("jquery.jpg");
+  background-size: 100%;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downSide-container .techSkills-container .course .jq:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.downSide-container .techSkills-container .course .bar-bg {
+  height: 15px;
+  width: 200px;
+  margin-top: 23px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #111a2d;
+}
+
+.downSide-container .techSkills-container .course .bar-value-html, .downSide-container .techSkills-container .course .bar-value-css, .downSide-container .techSkills-container .course .bar-value-sass, .downSide-container .techSkills-container .course .bar-value-js, .downSide-container .techSkills-container .course .bar-value-jq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #ff7f50;
+  color: white;
+}
+
+.downSide-container .techSkills-container .course .bar-value-html {
+  width: 180px;
+}
+
+.downSide-container .techSkills-container .course .bar-value-css {
+  width: 160px;
+}
+
+.downSide-container .techSkills-container .course .bar-value-sass {
+  width: 140px;
+}
+
+.downSide-container .techSkills-container .course .bar-value-js {
+  width: 120px;
+}
+
+.downSide-container .techSkills-container .course .bar-value-jq {
+  width: 100px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: #2f3542;
+  color: white;
+  margin-top: 20px;
+  border-bottom: 2px solid #ff7f50;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  border-top: 4px solid #ff7f50;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
